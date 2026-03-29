@@ -9,10 +9,10 @@ To implement Ridge, Lasso, and ElasticNet regularization models using polynomial
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
 
 ## Algorithm
-1. Load the car price dataset, select relevant numerical features (enginesize, horsepower, citympg, highwaympg) as input variables, and set price as the target variable. Split the data into training and testing sets.
-2, Apply standardization to the training features using StandardScaler and transform the testing features using the same scaler to ensure consistent feature scaling.
-3. Train a Linear Regression model using the scaled training data, predict prices for the test data, and evaluate model performance using MSE, RMSE, and R-squared metrics along with model coefficients.
-4. Check linearity using actual vs predicted plots, test independence of errors using the Durbin–Watson statistic, assess homoscedasticity through residual plots, and verify normality of residuals using histogram and Q–Q plots. Program:
+1. Load the dataset and preprocess it by handling categorical variables and separating features (X) and target variable (y).
+2. Split the dataset into training and testing sets and apply standardization to the data.
+3. Create pipelines with polynomial features and train Ridge, Lasso, and ElasticNet regression models.
+4. Predict the test data, evaluate the models using MSE, MAE, and R², and compare their performance using graphs.
 
 ## Program:
 ```
